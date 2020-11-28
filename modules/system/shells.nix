@@ -41,5 +41,10 @@ in
       ${concatStringsSep "\n" cfg.shells}
     '';
 
+    environment.etc."shells".knownSha256Hashes = [
+      "edfd1953cce18ab14449b657fcc01ece6a43a7075bab7b451f3186b885c20998"
+      "9d5aa72f807091b481820d12e693093293ba33c73854909ad7b0fb192c2db193"
+    ];
+
   };
 }
